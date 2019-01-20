@@ -19,6 +19,15 @@ public class Calculator {
         return (int) tester;
     }
 
+    int division(int value1, int value2){
+        long tester = (long) value1 / (long) value2;
+        if (tester == 0){
+            throw new ArithmeticException("Result can't be 0");
+        }
+        return (int) tester;
+    }
+
+
     private void overflowhandler(long tester) {
         if (tester > Integer.MAX_VALUE) {
             throw new ArithmeticException("Result is too big");
