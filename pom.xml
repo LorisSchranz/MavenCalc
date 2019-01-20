@@ -29,7 +29,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>App</mainClass>
+              <mainClass>ch.bbw.MavenCalculator.App</mainClass>
             </manifest>
           </archive>
         </configuration>
