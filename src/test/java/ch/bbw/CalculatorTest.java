@@ -40,4 +40,14 @@ public class CalculatorTest{
     public void testOverflowHandlingMultiplication() {
         assertEquals((long) Integer.MAX_VALUE * 2, calculator.multiplication(Integer.MAX_VALUE, 2));
     }
+
+    @Test
+    public void testDivisionZweiPositiveIsOk() {
+        assertEquals(calculator.division(30,10),3);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testOverflowHandlingDivision() {
+        assertEquals((long) Integer.MAX_VALUE / 0, calculator.division(Integer.MAX_VALUE, 0));
+    }
 }
