@@ -20,5 +20,6 @@ public class App
         valueB = 20;
 
         System.out.println("Summe " + valueA + " + " + valueB + " = " + calculator.sum(valueA, valueB));
+        System.out.println("Subtraktion " + valueB + " - " + valueA + " = " + calculator.subtraction(valueB, valueA));
     }
 }
