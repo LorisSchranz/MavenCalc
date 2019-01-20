@@ -30,4 +30,14 @@ public class CalculatorTest{
     public void testSubtractionOverflow() {
         assertEquals((long) Integer.MIN_VALUE - 1, calculator.subtraction(Integer.MIN_VALUE, 1));
     }
+
+    @Test
+    public void testMultiplicationZweiPositiveIsOk() {
+        assertEquals(calculator.multiplication(25,10),250);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testOverflowHandlingMultiplication() {
+        assertEquals((long) Integer.MAX_VALUE * 2, calculator.multiplication(Integer.MAX_VALUE, 2));
+    }
 }
