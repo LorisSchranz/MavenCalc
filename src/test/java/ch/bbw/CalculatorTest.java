@@ -21,4 +21,13 @@ public class CalculatorTest{
         assertEquals((long) Integer.MAX_VALUE + 1, calculator.sum(Integer.MAX_VALUE, 1));
     }
 
+    @Test
+    public void testSubtraktionZweiPositiveIsOk() {
+        assertEquals(calculator.subtraction(25,10),15);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testSubtractionOverflow() {
+        assertEquals((long) Integer.MIN_VALUE - 1, calculator.subtraction(Integer.MIN_VALUE, 1));
+    }
 }
