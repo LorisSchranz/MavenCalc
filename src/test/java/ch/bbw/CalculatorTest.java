@@ -190,4 +190,3 @@ public class CalculatorTest {
         assertEquals(6, calculator.multiplication(5 / 2, 3));
     }
 }
-}
