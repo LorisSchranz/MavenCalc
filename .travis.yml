@@ -1,3 +1,10 @@
 language: java
 sudo: false
 script: mvn install
+deploy:
+  provider: releases
+  api_key:
+    secure: d/n+DgPYPB0TWqZm/7uFPJY5tAUvLJxzAlei7jGV6gGKtQc15ttBgXTruHmK6LPyC6eYWEZhEshwjgit+TCEXsgyyMOhhX12XdWTzQJGIBIm+ymRdfrFT8mTz1MrnNGt+E7DHC0Sm8e8Tmh0rXr0Qd8UHL10N+bNUg7lCv72Hjz3OQPJ7S4CVhX15+QZ+oHMkeArjFGhSM10OSib9rKjF+kobd9NzuialH44GSvXP7x95ThnSahSBQUdLr+q5p9nHLjmcVacwNXRo4pZkgP2S34nlQcyxiI1nydrTKmejPrOkhdRQ07UuAjorbSoDCtzjlWGKpRlV/jaCYZ3CGYoFdCfxP4FObKf8zuRe5fQ05tT8iglgjS2ZBQWXhd44n4lAUOB60ku+9evOHF0xCSVCEWGS+5bP6VtgWo0BKGLNKIHw1GE1lmJEXzuUggTE7d5PkNtIAgSPabyf1w6k0sLQ43SCrYA6j814Zhnj1LBDXfBDaQ8h0uDo5x4jzMqxOevSkhdHA8aTUa67HBUNsxd9iyrHTMsJhFzSE5aQpFSA5n20UjM+nDq7u8uan/s76SYB+IsSkUwQq/mTxovoGsE+WYiPCKRG78dTW+VeQNOUkU/63ejDMqZtYTDmoY//rcM4Kh2N0zrtY/CkMI4r2l7QW9UhBXLIOjLLaXObTwGbn8=
+  file: "/home/travis/.m2/repository/ch/bbw/MavenCalculator/1.0-SNAPSHOT/MavenCalculator-1.0-SNAPSHOT.jar"
+  on:
+    repo: LorisSchranz/MavenCalc
