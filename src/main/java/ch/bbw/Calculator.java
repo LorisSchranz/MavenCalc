@@ -8,9 +8,9 @@ public class Calculator {
     }
 
     int subtraction(int value1, int value2){
-        long tester = (long) value1 - (long) value2;
+        long tester = (long)value1 - (long) value2;
         overflowhandler(tester);
-        return (int) tester;
+        return (int)tester;
     }
 
     private void overflowhandler(long tester) {
