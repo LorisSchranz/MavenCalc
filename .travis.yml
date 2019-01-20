@@ -13,4 +13,3 @@ deploy:
   file: "/home/travis/.m2/repository/ch/bbw/MavenCalculator/1.0-SNAPSHOT/MavenCalculator-1.0-SNAPSHOT.jar"
   on:
     repo: LorisSchranz/MavenCalc
-    tags: true
